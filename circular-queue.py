@@ -15,7 +15,7 @@ class CQueue:
 
     def dequeue(self):
         if self.size == 0:
-raise IndexError("Queue is empty!")
+            raise IndexError("Queue is empty!")
         item = self.queue[self.head]
         self.queue[self.head] = None
         self.head = (self.head + 1) % self.capacity
